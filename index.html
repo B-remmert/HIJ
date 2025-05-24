@@ -26,31 +26,34 @@
       height: auto;
       display: block;
     }
-    .flickity-button {
-      background: rgba(0, 0, 0, 0.5);
-    }
+    /* Default Flickity button styling — no overlap */
   </style>
 </head>
 <body>
-  <div class="carousel" data-flickity='{
-    "wrapAround": true,
-    "autoPlay": 5000,
-    "pauseAutoPlayOnHover": true,
-    "prevNextButtons": true,
-    "pageDots": false
-  }'>
-    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Colin+Seale.png" alt="Colin Seale"></div>
-    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/DL+reiki-2.png" alt="DL reiki"></div>
-    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Deb+Hauser.png" alt="Deb Hauser"></div>
-    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Dr.+A.J.png" alt="Dr. A.J."></div>
-    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Gerardo_+group+coaching.png" alt="Gerardo Group Coaching"></div>
+
+  <div class="carousel">
+    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Colin%2BSeale.png" alt="Colin Seale"></div>
+    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/DL%2Breiki-2.png" alt="DL reiki"></div>
+    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Deb%2BHauser.png" alt="Deb Hauser"></div>
+    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Dr.%2BA.J.png" alt="Dr. A.J."></div>
+    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Gerardo_%2Bgroup%2Bcoaching.png" alt="Gerardo Group Coaching"></div>
     <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Gieselle.png" alt="Gieselle"></div>
-    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/MM+coaching+client.png" alt="MM Coaching Client"></div>
-    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Principal_+Anonymous.png" alt="Anonymous Principal"></div>
-    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Veronica+Diaz.png" alt="Veronica Diaz"></div>
-    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/coaching+client_+Anonymous.png" alt="Anonymous Coaching Client"></div>
+    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/MM%2Bcoaching%2Bclient.png" alt="MM Coaching Client"></div>
+    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Principal_%2BAnonymous.png" alt="Anonymous Principal"></div>
+    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/Veronica%2BDiaz.png" alt="Veronica Diaz"></div>
+    <div class="carousel-cell"><img src="https://raw.githubusercontent.com/B-remmert/HIJ/main/images/coaching%2Bclient_%2BAnonymous.png" alt="Anonymous Coaching Client"></div>
   </div>
 
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    new Flickity('.carousel', {
+      wrapAround: true,
+      autoPlay: 5000,
+      pauseAutoPlayOnHover: true,
+      prevNextButtons: true,
+      pageDots: false
+    });
+  </script>
+
 </body>
 </html>
