@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonial Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fff;
+      padding: 20px;
+    }
+    .carousel {
+      background: #f8f8f8;
+      max-width: 800px;
+      margin: auto;
+    }
+    .carousel-cell {
+      width: 100%;
+      margin-right: 10px;
+    }
+    .carousel-cell img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .flickity-button {
+      background: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Testimonials</h1>
+  <div class="carousel" data-flickity='{
+    "wrapAround": true,
+    "autoPlay": 5000,
+    "pauseAutoPlayOnHover": true,
+    "prevNextButtons": true,
+    "pageDots": false
+  }'>
+    <div class="carousel-cell"><img src="https://github.com/B-remmert/HIJ/blob/main/images/Colin+Seale.png?raw=true" alt="Colin Seale"></div>
+    <div class="carousel-cell"><img src="https://github.com/B-remmert/HIJ/blob/main/images/DL+reiki-2.png?raw=true" alt="DL reiki"></div>
+    <div class="carousel-cell"><img src="https://github.com/B-remmert/HIJ/blob/main/images/Deb+Hauser.png?raw=true" alt="Deb Hauser"></div>
+    <div class="carousel-cell"><img src="https://github.com/B-remmert/HIJ/blob/main/images/Dr.+A.J.png?raw=true" alt="Dr. A.J."></div>
+    <div class="carousel-cell"><img src="https://github.com/B-remmert/HIJ/blob/main/images/Gerardo_+group+coaching.png?raw=true" alt="Gerardo Group Coaching"></div>
+    <div class="carousel-cell"><img src="https://github.com/B-remmert/HIJ/blob/main/images/Gieselle.png?raw=true" alt="Gieselle"></div>
+    <div class="carousel-cell"><img src="https://github.com/B-remmert/HIJ/blob/main/images/MM+coaching+client.png?raw=true" alt="MM Coaching Client"></div>
+    <div class="carousel-cell"><img src="https://github.com/B-remmert/HIJ/blob/main/images/Principal_+Anonymous.png?raw=true" alt="Anonymous Principal"></div>
+    <div class="carousel-cell"><img src="https://github.com/B-remmert/HIJ/blob/main/images/Veronica+Diaz.png?raw=true" alt="Veronica Diaz"></div>
+    <div class="carousel-cell"><img src="https://github.com/B-remmert/HIJ/blob/main/images/coaching+client_+Anonymous.png?raw=true" alt="Anonymous Coaching Client"></div>
+  </div>
 
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
